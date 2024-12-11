@@ -1,0 +1,19 @@
+title: NGK 2025S
+description: 東海地方のIT系コミュニティイベント
+baseurl: "kondou_mizuki-lp-sample" # GitHub Pages用
+url: "https://kondou_mizuki-lp-sample.github.io" # GitHub Pagesの公開URL
+
+markdown: kramdown
+
+destination: _site
+
+remote_theme: CloudCannon/frisco-jekyll-template
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
