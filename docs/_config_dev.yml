@@ -1,7 +1,9 @@
-title: example.com
-description: "Satellite - jekyll blog theme"
+title: NGK 2025S
+description: 東海地方のIT系コミュニティイベント
 logo_img: "/assets/img/favicon.webp"
 profile_img: "/assets/img/profile.webp"
+
+# https://github.com/byanko55/jekyll-theme-satellite/tree/master
 
 # Social Links
 email: example@gmail.com
@@ -12,26 +14,32 @@ linkedin_username: linkedin
 facebook_username: facebook
 
 # External API
-giscus_repo: "byanko55/jekyll-theme-satellite"
-giscus_repoId: "R_kgDOJ6fqWg"
-giscus_category: "Q&A"
-giscus_categoryId: "DIC_kwDOJ6fqWs4Cc7p7"
-goatcounter_code: byanko77
+giscus_repo:
+giscus_repoId:
+giscus_category:
+giscus_categoryId:
+goatcounter_code:
 google_analytics:
 
 # If your repo name follows the format "<user-name>.github.io", then leave the below blank.
 # Otherwise, set its value as "/<repo-name>". ex) baseurl: /myblog
-baseurl: ""
+baseurl: "" # GitHub Pages用
+# url: "https://kondou_mizuki-lp-sample.github.io" # GitHub Pagesの公開URL
+
+ # # # # # # # # # # # # # # # # # # # # #
+#                                                 #
+#   Not recommended to touch the materials below  #
+#                                                 #
+#    Any changes may contribute to malfunction    #
+#                                                 #
+# # # # # # # # # # # # # # # # # # # # # # # # # #
 
 # Build settings
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-loading-lazy
+remote_theme: byanko55/jekyll-theme-satellite
+
 
 exclude:
-  - docs/
+  - _posts
 
 collections:
   pages:
@@ -47,7 +55,7 @@ defaults:
       layout: "page"
       date: "1900-01-01"
 
-# Markdown newline activator 
+# Markdown newline activator
 kramdown:
   input: GFM
   hard_wrap: true
