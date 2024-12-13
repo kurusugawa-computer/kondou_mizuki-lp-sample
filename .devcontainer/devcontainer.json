@@ -15,12 +15,15 @@
       "extensions": [
         "ms-vscode-remote.remote-containers",
         "streetsidesoftware.code-spell-checker",
-        "yzhang.markdown-all-in-one"
+        "yzhang.markdown-all-in-one",
+        "kurusugawa-computer.markdown-copilot"
       ]
     }
   },
-  "forwardPorts": [4000], // Jekyllのサーバーポートをフォワード
+  "forwardPorts": [
+    4000
+  ], // Jekyllのサーバーポートをフォワード
   "postCreateCommand": "bundle install", // 初回セットアップ時にGemをインストール
-  "postStartCommand": "bundle exec jekyll serve --livereload --source docs --config docs/_config_dev.yml", // 開発サーバーを起動
+  "postStartCommand": "bundle exec jekyll serve --livereload --source docs --config docs/_config.yml", // 開発サーバーを起動
   "remoteUser": "vscode" // 開発用ユーザー
 }

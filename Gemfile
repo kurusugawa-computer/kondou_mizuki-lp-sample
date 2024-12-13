@@ -8,3 +8,4 @@ gem "jekyll-sitemap" # サイトマップを自動生成するためのプラグ
 gem "jekyll-feed" # RSSフィードを自動生成するためのプラグイン
 gem "github-pages", group: :jekyll_plugins # GitHub Pagesでサイトをホストするために必要（テーマやプラグインの互換性を確保）
 gem "jekyll-theme-satellite" # テーマを指定するためのプラグイン
+gem "jekyll-loading-lazy" # 画像の遅延読み込みを実現するためのプラグイン
